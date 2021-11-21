@@ -668,6 +668,7 @@ li {
 }
 .services > div:first-child .services-flex .service_type a {
   opacity: 0;
+  text-decoration: none;
   width: 0;
   height: 0;
   margin-bottom: 0rem;
