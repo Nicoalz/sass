@@ -619,8 +619,9 @@
                 margin: 1.35rem;
 
                 a {
-                    -webkit-transform: scale(0%, 0%);
-                    transform: scale(0%);
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
                     margin-bottom: 0rem
                     
                 }
@@ -687,8 +688,9 @@
                 &-active, &:hover{
                     a {
                         transition: 0.5s;
-                        -webkit-transform: scale(100%, 100%);
-                        transform: scale(100%);
+                        opacity: 1;
+                        width: auto;
+                        height: auto;
                         text-decoration: none;
                         margin-bottom: 3rem;
                     }
