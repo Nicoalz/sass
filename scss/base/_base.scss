@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+@import '../abstract/mixins';
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,800;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+    font-size: 20px;
+        
+    @include max1000 {
+        font-size: 16px;
+    }
+
+    @include max800 {
+        font-size: 14px;
+    }
+
+    @include max600 {
+        font-size: 12px;
+    }
+
+    @include max400 {
+        font-size: 12px;
+    }
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.45rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+    line-height:3.2rem;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    line-height: 2.35rem;
+}
+
+h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+}
+
+h4 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.85rem;
+}
+
+h5 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.85rem;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.85rem;
+}
+
+li {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+
+.button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+
+    &-blue {
+        background-color: #93A5FF;
+        color: white;
+    }
+
+    &-white {
+        background-color: white;
+        color: #93A5FF;
+    }
+
+    &-grey {
+        background-color: #F7F8FF;
+        color: #93A5FF;
+    }
+
+    
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+
+
+.slider_indicator {
+    background-color: #93A5FF;
+    opacity: 0.38;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin: 0 0.5rem;
+    border-radius: 100%;
+
+    &-active {
+        transform: scale(175%);
+        transition: 0.5s;
+        opacity: 1;
+    }
+}
+
